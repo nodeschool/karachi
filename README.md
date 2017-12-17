@@ -15,6 +15,8 @@ work through challenges.
 
 ## Want to attend?
 
+Keep your self up to date with our [Facebook](https://web.facebook.com/nskarachi/) page for event updates.
+
 ### Want to mentor or help organize?
 
 If you are interested in mentoring, please make a
