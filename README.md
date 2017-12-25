@@ -31,5 +31,5 @@ If you've come to a few NodeSchool events, we encourage you to mentor! :tada:
 
 ### Code of Conduct
 
-- [Code of Conduct for Nodeschool Vancouver](code-of-conduct.md)
+- [Code of Conduct for Nodeschool Karachi](code-of-conduct.md)
 - [No photography without an individual's permission](https://adainitiative.org/2013/07/another-way-to-attract-women-to-conferences-photography-policies/)
