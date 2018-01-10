@@ -9,7 +9,7 @@ NodeSchool events around the world. The workshopper tutorials are used
 as the course curriculum, while mentors are here to help attendees
 work through challenges.
 
-* Website: [https://github.com/nodeschool/karachi](https://github.com/nodeschool/karachi)
+* Website: [https://nodeschool.io/karachi/](https://nodeschool.io/karachi/)
 * Facebook: **[@nskarachi](https://web.facebook.com/nskarachi/)**
 * Gitter: [https://gitter.im/nodeschool/karachi](https://gitter.im/nodeschool/karachi)
 
