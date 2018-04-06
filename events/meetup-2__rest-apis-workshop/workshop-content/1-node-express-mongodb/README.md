@@ -1,2 +1,3 @@
-## Initiating a NodeJS app with Express & MongoDB
-
+nodeschool-workshop
+name: Muhammdad Bilal Alam
+slides: https://slides.com/bilalalam/deck#/
