@@ -1,0 +1,23 @@
+{
+  "name": "nodeschool-workshop",
+  "version": "1.0.0",
+  "description": "nodeschool-workshop",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BilalAlam173/nodeschool-workshop.git"
+  },
+  "author": "Bilal Alam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BilalAlam173/nodeschool-workshop/issues"
+  },
+  "homepage": "https://github.com/BilalAlam173/nodeschool-workshop#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.0.11"
+  }
+}
