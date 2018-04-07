@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>
+      <%= title %>
+    </h1>
+    <p>Welcome to
+      <%= title %>
+    </p>
+
+
+
+<!-- <div class="alert alert-info" id="alert-bar" role="alert"></div> -->
+
+    <div class="row">
+      <div class="col-sm-12">
+        <form id="userForm">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input type="text" class="form-control" id="userName" placeholder="Name" required>
+          </div>
+          <div class="form-group">
+            <label>Age</label>
+            <input type="text" class="form-control" id="age" placeholder="Age" required>
+          </div>
+          <button type="" id="saveBtn" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+      <!-- <div class="col-sm-12">
+        <table class="table table-striped">
+         <thead>
+           <tr>
+             <td>Name</td>
+             <td>Age</td>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td></td>
+           </tr>
+         </tbody>
+        </table>
+      </div> -->
+
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="/javascripts/main.js"></script>
+</body>
+
+</html>
