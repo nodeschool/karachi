@@ -25,5 +25,6 @@ module.exports = function () {
 function shutDown() {
     mongoose.connection.close(function () {
             console.log('Connection has been successfully closed, see you again soon!');
+            process.exit(0);
     });
 }
