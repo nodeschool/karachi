@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="file" name="file" id="file" onchange="readImage()">
+  <img src="" alt="pic here" srcset="">
+</body>
+
+<script>
+  function readImage() {
+    var image = document.querySelector("img");
+    var file = document.querySelector("input[type=file]").files[0];
+    var fileReader = new FileReader()
+
+    var base64Str = null;
+    fileReader.addEventListener("load", function () {
+      image.src = fileReader.result;
+
+      base64Str = fileReader.result;
+
+      var payload = {
+        base64Img: base64Str
+      }
+      fetch('http://localhost:3000/files/single', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
+    });
+
+    if (file) {
+      fileReader.readAsDataURL(file);
+    }
+  }
+</script>
+
+</html>
