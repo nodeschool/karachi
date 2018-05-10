@@ -2039,8 +2039,10 @@ img {vertical-align: middle;}
   max-width: 700px;
   text-align: left;
   color: #ccc;
+  line-height: 48px;
+  margin-bottom: 30px;
 }
- .date {
+ #event-date {
   margin: auto;
   display: block;
   width: 80%;
@@ -2048,7 +2050,7 @@ img {vertical-align: middle;}
   text-align: right;
   color: #ccc;
 }
-.event-description {
+#event-description {
   margin: auto;
   display: block;
   width: 80%;
@@ -2057,7 +2059,7 @@ img {vertical-align: middle;}
   color: #ccc;
 }
 /* Add Animation */
-.modal-content, #caption, .event-description, .event-link, .date {    
+.modal-content, #caption, #event-description, .event-link, #event-date {    
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;

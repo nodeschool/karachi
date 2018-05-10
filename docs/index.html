@@ -214,15 +214,14 @@
 	<div id="myModal" class="modal">
 		<span class="close">&times;</span>
 		<img class="modal-content" id="img01">
-		<a href="https://www.facebook.com" target="_blank">
+		<a id="event-link" href="" target="_blank">
 			<div id="caption"></div>
 		</a>
-		<div class="date">Date: 10-05-2018</div>
-		<p class="event-description">
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-				when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-				It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+		<div id="event-date"></div>
+		<p id="event-description">
+			This is the official launch of the NodeSchool Karachi Chapter.
+			The aim is to introduce NodeSchool, have a meetup to network with professionals. Teach & learn JavaScript and ultimately NodeJS. 
+			We'll share what our plans are going forward and will have some light talks as well as an `Angular` workshop too.
 		</p>
 	</div>
 	<!-- =================End model================= -->
@@ -237,26 +236,16 @@
 
 						<!-- Full-width images with number and caption text -->
 						<div class="mySlides fade">
-							<img src="images/event1.jpg" alt="Event 1" class="image" style="width:100%; height:300px">
-							<div class="caption">Caption One</div>
+							<img src="images/node_school_event1.jpg" alt="NodeSchool Karachi - The Chapter Begins" class="image" style="width:100%; height:350px">
 							<div class="overlay">
-								<div class="text" onclick="openModel('images/event1.jpg', 'Event 1')">Event 1</div>
+								<div class="text" onclick="openModel('images/node_school_event1.jpg', 'NodeSchool Karachi - The Chapter Begins','https://web.facebook.com/events/541384019573592/','Saturday, February 17 at 2 PM - 4 PM')">NodeSchool Karachi - The Chapter Begins</div>
 							</div>
 						</div>
 
 						<div class="mySlides fade">
-							<img src="images/event2.jpg" alt="Event 2" class="image" style="width:100%; height:300px">
-							<div class="caption">Caption Two</div>
+							<img src="images/node_school_event2.jpg" alt="Meetup #2 - REST APIs Workshop" class="image" style="width:100%; height:350px">
 							<div class="overlay">
-								<div class="text" onclick="openModel('images/event2.jpg', 'Event 2')">Event 2</div>
-							</div>
-						</div>
-
-						<div class="mySlides fade">
-							<img src="images/event3.jpg" alt="Event 3" class="image" style="width:100%; height:300px">
-							<div class="caption">Caption Three</div>
-							<div class="overlay">
-								<div class="text" onclick="openModel('images/event3.jpg', 'Event 3')">Event 3</div>
+								<div class="text" onclick="openModel('images/node_school_event2.jpg', 'Meetup #2 - REST APIs Workshop','https://web.facebook.com/events/162325484581405/','Saturday, April 7 at 3 PM - 6 PM')">Meetup #2 - REST APIs Workshop</div>
 							</div>
 						</div>
 
@@ -270,7 +259,6 @@
 					<div style="text-align:center">
 						<span class="dot" onclick="currentSlide(1)"></span>
 						<span class="dot" onclick="currentSlide(2)"></span>
-						<span class="dot" onclick="currentSlide(3)"></span>
 					</div>
 				</div>
 			</div>
