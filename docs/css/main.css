@@ -1788,7 +1788,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   max-width: 850px;
 }
 #about span {
-  color: #117819;
+  color: #113013;
 }
 #about h3 {
   font-family: "montserrat-bold", sans-serif;
@@ -1880,8 +1880,275 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     font-size: 2.3rem;
   }
 }
+/* ===================================================================
+ *  --. Event - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+ #event {
+  position: relative;
+  /* padding: 4.2rem 0 12rem; */
+  background-color: #FFFFFF;
+  min-height: 696px;
+  text-align: center;
+}
+#event .about-wrap {
+  max-width: 850px;
+}
+#event span {
+  color: #113013;
+}
+#event h3 {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.667;
+  color: #117819;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  position: relative;
+}
+#event h3::before {
+  display: block;
+  content: "";
+  width: 3px;
+  height: 9.6rem;
+  background-color: rgba(149, 149, 149, 0.7);
+  margin: 0 auto 2.4rem;
+}
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+.caption {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.slideshow-container .image {
+  background-color: rgba(0, 0, 0, 0.9);
+}
 
+/*========================= Slideshow container ===========================*/
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+/* ======================Slide End===================== */
+
+/*------------------------------- overlay start--------------------*/
+.mySlides:hover .overlay {
+  height: 100%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  padding: 16px 32px;
+  background-color: #117819;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+}
+/* ------------------ Overlay End ----------------------- */
+
+/* ========================Model Start================================ */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.955); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption{
+  margin: auto;
+  margin-top: 10px;
+  display: block;
+  font-size: 40px;
+  width: 80%;
+  max-width: 700px;
+  text-align: left;
+  color: #ccc;
+  line-height: 48px;
+  margin-bottom: 30px;
+}
+ #event-date {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: right;
+  color: #ccc;
+}
+#event-description {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+}
+/* Add Animation */
+.modal-content, #caption, #event-description, .event-link, #event-date {    
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 40px;
+  right: 170px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+      width: 100%;
+  }
+}
+/* =========================== Model End =========================== */
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 /* ===================================================================
  *  12. faqs - (_layout.scss)
  *

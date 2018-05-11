@@ -66,8 +66,12 @@
 				<li>
 					<a class="smoothscroll" href="#about" title="">About</a>
 				</li>
-				<li><a class="smoothscroll" href="#faqs" title="">FAQs</a></li>
-				<li><a class="smoothscroll" href="#code-of-conduct" title="">Code of Conduct</a></li>
+				<li>
+					<a class="smoothscroll" href="#faqs" title="">FAQs</a>
+				</li>
+				<li>
+					<a class="smoothscroll" href="#code-of-conduct" title="">Code of Conduct</a>
+				</li>
 				<!-- <li><a class="smoothscroll" href="#services" title="">Services</a></li>
 				<li><a class="smoothscroll" href="#portfolio" title="">Works</a></li> -->
 				<!-- <li><a class="smoothscroll" href="#contact" title="">Contact</a></li>						 -->
@@ -203,8 +207,63 @@
 
 	<!-- about
    ================================================== -->
+	<!-- Events -->
 
+	<!-- End Events -->
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="img01">
+		<a id="event-link" href="" target="_blank">
+			<div id="caption"></div>
+		</a>
+		<div id="event-date"></div>
+		<p id="event-description">
+			This is the official launch of the NodeSchool Karachi Chapter.
+			The aim is to introduce NodeSchool, have a meetup to network with professionals. Teach & learn JavaScript and ultimately NodeJS. 
+			We'll share what our plans are going forward and will have some light talks as well as an `Angular` workshop too.
+		</p>
+	</div>
+	<!-- =================End model================= -->
+	<section id="event">
+		<div class="row about-wrap">
+			<div class="col-full">
+				<div class="about-profile-bg"></div>
+				<div class="intro">
+					<h3 class="animate-this">Events</h3>
+					<!-- Slideshow container -->
+					<div class="slideshow-container">
 
+						<!-- Full-width images with number and caption text -->
+						<div class="mySlides fade">
+							<img src="images/node_school_event1.jpg" alt="NodeSchool Karachi - The Chapter Begins" class="image" style="width:100%; height:350px">
+							<div class="overlay">
+								<div class="text" onclick="openModel('images/node_school_event1.jpg', 'NodeSchool Karachi - The Chapter Begins','https://web.facebook.com/events/541384019573592/','Saturday, February 17 at 2 PM - 4 PM')">NodeSchool Karachi - The Chapter Begins</div>
+							</div>
+						</div>
+
+						<div class="mySlides fade">
+							<img src="images/node_school_event2.jpg" alt="Meetup #2 - REST APIs Workshop" class="image" style="width:100%; height:350px">
+							<div class="overlay">
+								<div class="text" onclick="openModel('images/node_school_event2.jpg', 'Meetup #2 - REST APIs Workshop','https://web.facebook.com/events/162325484581405/','Saturday, April 7 at 3 PM - 6 PM')">Meetup #2 - REST APIs Workshop</div>
+							</div>
+						</div>
+
+						<!-- Next and previous buttons -->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+					<br>
+
+					<!-- The dots/circles -->
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- faqs
    ================================================== -->
 	<section id="faqs">
@@ -230,16 +289,19 @@
 							Who is running the Karachi chapter?
 						</div>
 						<div class="answer">
-							Ahsan Ayaz (<a href="https://github.com/ahsanayaz">@ahsanayaz</a>) runs the Karachi chapter. Feel free to reach out for any questions.
+							Ahsan Ayaz (
+							<a href="https://github.com/ahsanayaz">@ahsanayaz</a>) runs the Karachi chapter. Feel free to reach out for any questions.
 						</div>
 					</p>
-					
+
 					<p class="lead animate-this">
 						<div class="question">
 							What actually happens at a NodeSchool Karachi event?
 						</div>
 						<div class="answer">
-							NodeSchool Karachi events are an opportunity to hang out with other learners and mentors in a low stress, encouraging environment. Get set up to work on lessons with real industry tools on your own computer, at your own pace. A typical event follows this schedule:
+							NodeSchool Karachi events are an opportunity to hang out with other learners and mentors in a low stress, encouraging environment.
+							Get set up to work on lessons with real industry tools on your own computer, at your own pace. A typical event follows
+							this schedule:
 							<ul>
 								<li>Doors open</li>
 								<li>Introduciton & opening announcements (15 minutes)</li>
@@ -256,7 +318,9 @@
 							What is a Focused Session?
 						</div>
 						<div class="answer">
-							Focused Sessions happen during our NodeSchool events. While our general event is free-form and self-directed, our Focused Sessions are more of a lecture-style format led by a mentor on special topics. Keep an eye on our website and Facebook page for announcements!
+							Focused Sessions happen during our NodeSchool events. While our general event is free-form and self-directed, our Focused
+							Sessions are more of a lecture-style format led by a mentor on special topics. Keep an eye on our website and Facebook
+							page for announcements!
 						</div>
 					</p>
 					<p class="lead animate-this">
@@ -264,7 +328,8 @@
 							How much does it cost to attend?
 						</div>
 						<div class="answer">
-							NodeSchool Karachi is free! And <a href="https://github.com/nodeschool/karachi">open source</a>!
+							NodeSchool Karachi is free! And
+							<a href="https://github.com/nodeschool/karachi">open source</a>!
 						</div>
 					</p>
 					<p class="lead animate-this">
@@ -275,14 +340,17 @@
 							We're always looking for people to volunteer to be mentors! We ask that prospective mentors:
 							<ul>
 								<li>
-									Have already completed the <a href="http://nodeschool.io/#workshopper-list">core NodeSchool workshoppers</a> before the event.
+									Have already completed the
+									<a href="http://nodeschool.io/#workshopper-list">core NodeSchool workshoppers</a> before the event.
 									<ul>
 										<li>Having also completed some elective workshoppers is a great bonus.</li>
 									</ul>
 								</li>
-								<li>Review the <a href="https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices">Mentor Best Practices</a> wiki page.</li>
+								<li>Review the
+									<a href="https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices">Mentor Best Practices</a> wiki page.</li>
 								<li>Arrive 30 minutes early at the event so we can get setup and have our mentor meeting.</li>
-								<li>Sign up on the event's <a href="https://github.com/nodeschool/karachi/issues">GitHub issue</a>!</li>
+								<li>Sign up on the event's
+									<a href="https://github.com/nodeschool/karachi/issues">GitHub issue</a>!</li>
 							</ul>
 						</div>
 					</p>
@@ -291,7 +359,8 @@
 							More questions?
 						</div>
 						<div class="answer">
-							File an issue at our <a href="https://github.com/nodeschool/karachi/issues">GitHub repo</a> and we'll answer as soon as possible.
+							File an issue at our
+							<a href="https://github.com/nodeschool/karachi/issues">GitHub repo</a> and we'll answer as soon as possible.
 						</div>
 					</p>
 				</div>
@@ -306,7 +375,7 @@
 
 	<!-- faqs
    ================================================== -->
-   <section id="code-of-conduct">
+	<section id="code-of-conduct">
 
 		<div class="row code-of-conduct-wrap">
 			<div class="col-full">
@@ -316,7 +385,12 @@
 				<div class="intro">
 					<h3 class="animate-this">Code Of Conduct</h3>
 					<p class="lead animate-this c-o-c-content">
-						<span>NodeSchool Karachi </span>is dedicated to providing a harassment-free event experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of event participants in any form. Sexual language and imagery is not appropriate for any event venue, including talks, workshops, parties, Twitter and other online media. Event participants violating these rules may be sanctioned or expelled from the event at the discretion of the event organisers.
+						<span>NodeSchool Karachi </span>is dedicated to providing a harassment-free event experience for everyone, regardless of
+						gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race,
+						ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of event participants in
+						any form. Sexual language and imagery is not appropriate for any event venue, including talks, workshops, parties,
+						Twitter and other online media. Event participants violating these rules may be sanctioned or expelled from the event
+						at the discretion of the event organisers.
 					</p>
 
 					<p class="lead animate-this">
@@ -327,18 +401,21 @@
 
 							<ul>
 								Organizers:
-								<li>Ahsan Ayaz (<a href="https://github.com/ahsanayaz">@ahsanayaz</a>)</li>
-								<li>Muhammad Kamran Qadri (<a href="https://github.com/smkamranqadri">@smkamranqadri</a>)</li>
+								<li>Ahsan Ayaz (
+									<a href="https://github.com/ahsanayaz">@ahsanayaz</a>)</li>
+								<li>Muhammad Kamran Qadri (
+									<a href="https://github.com/smkamranqadri">@smkamranqadri</a>)</li>
 							</ul>
 						</div>
 					</p>
-					
+
 					<p class="lead animate-this">
 						<div class="content">
 							If you have questions or feedback about this Code of Conduct please contact one of the organizers.
 						</div>
 						<div class="content">
-							The organizers of the above community adhere to the <a href="http://jsconf.com/codeofconduct.html">JSConf Code of Conduct</a>.
+							The organizers of the above community adhere to the
+							<a href="http://jsconf.com/codeofconduct.html">JSConf Code of Conduct</a>.
 						</div>
 					</p>
 				</div>
