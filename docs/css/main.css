@@ -1977,6 +1977,7 @@ img {vertical-align: middle;}
   display: block;
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 .overlay {
   position: absolute;
@@ -2042,6 +2043,9 @@ img {vertical-align: middle;}
   line-height: 48px;
   margin-bottom: 30px;
 }
+#caption:hover {
+  color: #117819;
+}
  #event-date {
   margin: auto;
   display: block;
@@ -2055,7 +2059,7 @@ img {vertical-align: middle;}
   display: block;
   width: 80%;
   max-width: 700px;
-  text-align: center;
+  text-align: left;
   color: #ccc;
 }
 /* Add Animation */
