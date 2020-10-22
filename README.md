@@ -28,6 +28,7 @@ on what it's like being a mentor prior to signing up. Make sure to put some link
 - [@smkamranqadri](https://github.com/smkamranqadri)
 - [@farazmurtaza](https://github.com/farazmurtaza)
 - [@saadqamar](https://github.com/SaadQamar01)
+- [@viveksharmaui](https://github.com/viveksharmaui)
 
 If you've come to a few NodeSchool events, we encourage you to mentor! :tada:
 
